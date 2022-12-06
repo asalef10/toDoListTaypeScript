@@ -1,4 +1,5 @@
 import { FC, useState } from "react";
+import { ITask } from "../../../Interfaces";
 import { useGlobalContext } from "../../../useContext/Context";
 import AddTask from "../addTask/AddTask";
 import ButtonsHandle from "../editTask/ButtonsHandle";
@@ -57,7 +58,7 @@ const Table: FC = () => {
                 return value;
               }
             })
-            .map((item: any, i: Number) => {
+            .map((item: ITask, i: Number) => {
               return (
                 <>
                   <tr key={item.id}>

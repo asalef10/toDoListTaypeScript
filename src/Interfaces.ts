@@ -12,6 +12,6 @@ export interface ITask {
 }
 export interface IEditComponent {
   lastValue?: string;
-  stateText?: any;
+  stateText?: any
   taskText?: string;
 }

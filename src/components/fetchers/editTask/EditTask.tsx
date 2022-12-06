@@ -6,7 +6,7 @@ const EditTask = ({ lastValue, taskText, stateText }: IEditComponent) => {
     stateText(lastValue);
   }, []);
 
-  const editHandle = (e: any) => {
+  const editHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
     stateText(e.target.value);
 
     if (taskText == "") {

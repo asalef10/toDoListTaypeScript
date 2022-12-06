@@ -30,7 +30,7 @@ function App() {
     }
   }, [dataTasks]);
 
-  const addressShortcut = (addressWallet: string | any) => {
+  const addressShortcut = (addressWallet: string ) => {
     let address = `${addressWallet?.slice(0, 6)}...${addressWallet?.slice(
       -4
     )} `;
