@@ -6,10 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import Web3 from "web3";
 import { Web3ReactProvider } from "@web3-react/core";
 import UseContext from "./useContext/Context";
+import { IpcProvider } from "web3-core";
 
 
 
-function getLibrary(provider:any) {
+function getLibrary(provider:IpcProvider) {
   // window.ethereum
   return new Web3(provider);
 }

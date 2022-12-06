@@ -49,7 +49,7 @@ const Table: FC = () => {
         </thead>
         <tbody>
           {dataTasks
-            .filter((value: any) => {
+            .filter((value:ITask) => {
               if (
                 value.taskName
                   ?.toLowerCase()

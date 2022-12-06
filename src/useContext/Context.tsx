@@ -87,9 +87,8 @@ const UseContext = ({ children }: Props) => {
       let chartDetails = JSON.parse(
         localStorage.getItem(`${account}_chartDetails`) || "{}"
       );
-
-      setDataTasks((task): any =>
-        task.map((obj: any) => {
+      setDataTasks((task):ITask[] =>
+        task.map((obj:any) => {
           if (obj.id === id) {
             let itemCount = chartDetails[obj.time];
             if (status) {
