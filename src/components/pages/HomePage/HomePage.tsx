@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Table from "../../fetchers/Table/Table";
+import Table from "../../fetchers/table/Table";
 import LineChart from "../LineChart/LineChart";
 
 const HomePage: FC = () => {
@@ -7,9 +7,9 @@ const HomePage: FC = () => {
     <>
 
       <Table />
-      <br />
-      <br />
+      
       <LineChart />
+
   
     </>
   );
